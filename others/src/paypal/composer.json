@@ -1,0 +1,18 @@
+{
+    "name": "paypal/paypal-payment",
+    "description": "Oneoutlet Paypal Payment",
+    "type": "library",
+    "require": {
+        "league/omnipay": "^3.0",
+        "omnipay/paypal": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Paypal\\PaypalPayment\\": "src/"
+        }
+    },
+    "config": {
+        "platform-check": false
+    }
+}

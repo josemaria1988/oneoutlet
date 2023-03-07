@@ -1,0 +1,23 @@
+.stripe_header {
+	display: flex;
+	justify-content: center;
+}
+
+.stripe_payment {
+	max-width: 450px;
+	text-align: center;
+	margin: 50px 0 20px 0;
+	padding: 30px 30px 0 30px;
+
+	background-color: white;
+}
+
+.stripe_payment h1 {
+	font-size: 28px;
+	color: #595959;
+}
+
+.gold {
+	display: flex;
+	gap: 20px;
+}

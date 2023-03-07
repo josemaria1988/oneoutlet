@@ -1,0 +1,274 @@
+.rest_header {
+	position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #41b6e6;
+  z-index: 0;
+}
+
+.founder {
+  font-size: 15px;
+  margin: 5px 5px 5px 10px;
+}
+
+.tab-pane.active {
+    animation: slide-up 0.4s ease-out;
+}
+
+.product-list .trending-place-item {
+    box-shadow: 0 0 17px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 50px;
+}
+
+.trending-place-item {
+    background: #fff;
+    margin: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+    border-radius: 3px;
+}
+
+.no-pad-lr {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.trending-img {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 100%;
+}
+
+.product-list .trending-place-item .trending-img img {
+    box-shadow: 0 0 17px 0 rgb(0 0 0 / 8%);
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 3px !important;
+    height: 100%;
+}
+.trending-place-item:hover .trending-img img {
+    transform: scale(1.1);
+}
+.trending-place-item img {
+    width: 100%;
+}
+.trending-img img {
+    transition: 0.5s;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.trending-place-item span {
+    font-size: 17px;
+    font-weight: 400;
+}
+.trending-rating-green {
+    background: #46cd38 !important;
+}
+.trending-rating, .trending-rating-orange, .trending-rating-pink, .trending-rating-green {
+    position: absolute;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 19px;
+    background: #ff7474;
+    color: #fff;
+    border-radius: 50%;
+    top: 15px;
+    right: 17px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.save-btn i{
+  font-size: large;
+  padding-top: 6px;
+}
+
+.trending-place-item .save-btn {
+    position: absolute;
+    left: 6%;
+    z-index: 999;
+    top: 80%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50%;
+    line-height: 1.9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.trending-place-item span {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.product-list .trending-place-item .trending-title-box {
+    padding: 30px;
+}
+.trending-title-box {
+    padding: 22px 28px;
+}
+
+.trending-title-box h4 {
+    font-family: "poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+.trending-title-box h4 a {
+    font-size: 20px;
+    letter-spacing: 0;
+    font-family: "poppins", sans-serif;
+}
+.trending-place-item a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.customer-review {
+    margin-bottom: 50px;
+}
+
+.float-left {
+    float: left!important;
+}
+
+.float-right {
+    float: right!important;
+}
+
+.product-rating li {
+    display: inline-block;
+}
+li {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    list-style: none !important;
+}
+
+.product-rating li i {
+    font-size: 18px;
+    cursor: pointer;
+    color: #FFC600;
+}
+
+.trending-address {
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.trending-address li {
+    list-style: none;
+    color: #737882;
+    position: relative;
+}
+
+.trending-address li i {
+    color: #0cbcb7;
+    position: absolute;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.trending-address li p {
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+.trending-address li p {
+    margin-left: 40px;
+}
+.trending-title-box p {
+    color: #999;
+    margin: 0;
+}
+
+.trending-bottom {
+    border-top: 1px solid #ededed;
+    padding-top: 20px;
+}
+.mar-top-15 {
+    margin-top: 15px !important;
+}
+.pad-bot-30 {
+    padding-bottom: 30px !important;
+}
+
+.round-bg.pink {
+    background-color: #FFAE00;
+    color: #fff;
+}
+.trend-left span, .trend-right a {
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 28px;
+}
+.trend-left span {
+    margin-right: 7px;
+}
+.trending-place-item span {
+    font-size: 17px;
+    font-weight: 400;
+}
+.round-bg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.round-bg i {
+    font-size: 16px;
+}
+
+.trending-bottom p {
+    display: inline-block;
+}
+.trending-title-box p {
+    color: #999;
+    margin: 0;
+}
+.trending-place-item a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+a {
+    color: #141414;
+    text-decoration: none;
+    position: relative;
+    font-family: "poppins", sans-serif;
+}
+.trend-open {
+    color: #46cd38;
+    font-size: 14px;
+    display: block;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 10px;
+}
+.trend-open i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+.trend-right i {
+    color: #999;
+    font-size: 18px;
+}
