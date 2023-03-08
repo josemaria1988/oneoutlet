@@ -260,6 +260,7 @@ Route::group(['middleware' => 'UserMiddleware', 'prefix' => "user"], function ()
     Route::post('/payment/free-plan', [UserController::class, 'purchase_free_plan'])->name('user.purchase.free');
 
     Route::post('/payment/create_preference', [PaymentsController::class, 'purchase_plan']);
+    Route::post('/pagar', [PaymentController::class, 'pagar']);
 
     Route::post('/notify/monitor', [ShopOrderController::class, 'notifyMonitoring'])->name('front.notify.monitor');
     Route::post('/notify/control', [ShopOrderController::class, 'notifyControl'])->name('front.notify.control');
