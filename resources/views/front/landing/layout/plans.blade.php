@@ -80,7 +80,8 @@
 					</div>
 
 					<div class="button">
-						<a href="{{ route('home') }}" class="btn">Assine agora<i class="lni lni-arrow-right"></i></a>
+					<a href="#" class="btn" id="btn-comprar">Assine agora<i class="lni lni-arrow-right"></i></a>
+						
 					</div>
 					<!-- <p class="no-card">Não é necessário cartão de crédito</p> -->
 				</div>				
@@ -126,3 +127,29 @@
 		</div>
 	</div>
 </section>
+
+<script>
+  $('#btn-comprar').click(function(event) {
+    event.preventDefault();
+    var monto = 99.00;
+    var descripcion = 'Plan Plus';
+    var emailComprador = '{{ Auth::user()->email }}';
+    $.ajax({
+      url: '/pagar',
+      method: 'POST',
+      dataType: 'json',
+      data: {
+        monto: monto,
+        descripcion: descripcion,
+        emailComprador: emailComprador
+      },
+      success: function(response) {
+        window.location.href = response;
+      },
+      error: function(error) {
+        console.log(error);
+        alert('Error al procesar el pago.');
+      }
+    });
+  });
+</script>

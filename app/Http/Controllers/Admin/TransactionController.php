@@ -29,13 +29,24 @@ class TransactionController extends Controller
         $status = Transaction::where('id',$request->id)->update(['date'=>date("Y-m-d h:i:sa"),'status'=>$request->status]);
         if($status){
             $transaction = Transaction::where('id',$request->id)->first();
+            
+            $data = array(
+              'plan' => $transaction->plan,
+              'amount' => $transaction->amount,
+              'payment_type' => $transaction->payment_type,
+              'payment_id' => $transaction->payment_id,
+              'restaurant' => $transaction->restaurant,
+            );
+            $payload = json_encode($data);
+
+            $ch = curl_init('http://localhost:3000/pagos');
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+            $result = curl_exec($ch);
+            curl_close($ch);
 
             User::where('id', $transaction->restaurant)
             ->update([
-                'payment_id' => $transaction->payment_id,
-                'plan' => $transaction->plan,
-                'purchase_amount' => $transaction->amount,
-                'payment_type' => $transaction->payment_type,
                 'free_plan' => 1,
                 'purchase_date' => date("Y-m-d h:i:sa"),
             ]);
